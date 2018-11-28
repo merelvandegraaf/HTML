@@ -1,0 +1,88 @@
+*{
+}
+
+header{
+    border-style: solid;
+    background-color: green;
+    color: white;
+}
+
+body{
+    background-color:gray;
+}
+
+h1{
+    text-align: center;
+}
+
+#logo{
+    margin-right:20px;
+    float: left;
+}
+
+nav{
+    display:flex;
+    justify-content: center;
+}
+
+nav  li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav  li  a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color:white;
+}
+
+nav  li  a:hover {
+    background-color: white;
+    color: black;
+}
+
+nav  li  a:focus {
+    background-color: white;
+    color:black;
+}
+
+nav a{
+    color: black;
+}
+
+.huidig{
+    background-color:white;
+    color:black;
+}
+
+main{
+    display: block;
+    border-style: solid;
+    margin: auto;
+    width: 50em;
+    margin-top: 3em;
+    padding:2em;
+    background-color: white;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: green;
+    color: white;
+}
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+footer{
+
+}
