@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Bericht maken</title>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+    <meta name="description" content="Beroepsproduct website over voetbal">
+    <meta name="keywords" content="Voetbal">
+    <meta name="author" content="Brian van der Wiel & Merel van de Graaf">
+</head>
+<body>
+<header>
+    <img id="logo" src="Afbeeldingen/logo.png" alt="logo" style="border:0;"><h1>Voetbal</h1>
+    <nav>
+        <a  href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Video's</button>
+            <div class="dropdown-content">
+                <a href="videos.html">Hoofdpagina</a>
+                <a href="#">Video 1</a>
+                <a href="#">Video 2</a>
+                <a href="#">Video 3</a>
+                <a href="#">Video 4</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button  class="dropbtn">Forum</button>
+            <div class="dropdown-content">
+                <a href="forum.html">Forum</a>
+                <a href="voorbeeld_forum.html">Regels</a>
+                <a href="#">Spelers</a>
+                <a href="#">Clubs</a>
+                <a href="#">Kampioenschappen</a>
+                <a href="#">Strategie</a>
+                <a href="#">Trainingen</a>
+            </div>
+        </div>
+
+        <a href="over_ons.html">Over ons</a>
+        <a href="bezoeker.html">Bezoeker</a>
+
+    </nav>
+</header>
+<main>
+   <h2>Plaats een bericht</h2>
+    <form>
+        Post naam<br>
+        <input type="text" name="Onderwerp"><br>
+
+        Onderwerp<br>
+        <select name="Onderwerp">
+            <option value="regels">Regels</option>
+            <option value="spelers">Spelers</option>
+            <option value="clubs">Clubs</option>
+            <option value="kampioenschappen">Kampioenschappen</option>
+            <option value="strategie">Strategie</option>
+            <option value="trainingen">Trainingen</option>
+        </select><br>
+
+        Bericht<br>
+        <textarea name="subject" placeholder="Je bericht.."></textarea><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</main>
+<footer>©2018 Brian van der Wiel & Merel van de Graaf</footer>
+</body>
+</html>
