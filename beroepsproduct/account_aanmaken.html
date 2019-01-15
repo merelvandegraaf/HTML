@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Account aanmaken</title>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+    <meta name="description" content="Beroepsproduct website over voetbal">
+    <meta name="keywords" content="Voetbal">
+    <meta name="author" content="Brian van der Wiel & Merel van de Graaf">
+</head>
+<body>
+<header>
+    <img id="logo" src="Afbeeldingen/logo.png" alt="logo" style="border:0;">
+    <h1>Bezoeker</h1>
+    <nav>
+        <a  href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Video's</button>
+            <div class="dropdown-content">
+                <a href="videos.html">Hoofdpagina</a>
+                <a href="#">Video 1</a>
+                <a href="#">Video 2</a>
+                <a href="#">Video 3</a>
+                <a href="#">Video 4</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button  class="dropbtn">Forum</button>
+            <div class="dropdown-content">
+                <a href="forum.html">Forum</a>
+                <a href="voorbeeld_forum.html">Regels</a>
+                <a href="#">Spelers</a>
+                <a href="#">Clubs</a>
+                <a href="#">Kampioenschappen</a>
+                <a href="#">Strategie</a>
+                <a href="#">Trainingen</a>
+            </div>
+        </div>
+
+        <a href="over_ons.html">Over ons</a>
+        <a href="bezoeker.html">Bezoeker</a>
+
+    </nav>
+</header>
+<main>
+    <h2>Inloggen</h2>
+    <div class="registreren">
+    <form method="get"  action="/oefendoc2.php">
+        <label for="login">Gebruikersnaam</label>
+        <input type="text" id="login" name="login" placeholder="Je gebruikersnaam..">
+
+        <label for="psw">Wachtwoord</label>
+        <input type="text" id="psw" name="psw" placeholder="Je wachtwoord..">
+
+        <label for="naam">E-mail</label>
+        <input type="text" id="naam" name="naam" placeholder="Je naam..">
+
+        <input type="submit" name="verzenden" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    </div>
+</main>
+<footer>©2018 Brian van der Wiel & Merel van de Graaf</footer>
+</body>
+</html>

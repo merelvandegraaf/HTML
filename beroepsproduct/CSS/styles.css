@@ -1,0 +1,237 @@
+*{
+
+}
+
+
+header{
+    border-style: solid;
+    /*background-color: green;*/
+    background-image: url(../Afbeeldingen/headerbackground.jpg);
+    
+    color: white;
+}
+
+body{
+    /*background-color:gray;*/
+    background-image: url(../Afbeeldingen/footerbackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#logo{
+    margin:10px;
+    float: left;
+}
+
+nav{
+    display:flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: row;
+
+
+}
+
+nav  a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    background-color:green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position:relative;
+}
+
+nav  a:hover {
+    background-color: white;
+    color: black;
+}
+
+nav a:focus {
+    background-color: white;
+    color:black;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    margin: auto;
+    width: 50em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    padding:2em;
+    background-color: white;
+    border-radius: 2em
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: green;
+    color: white;
+}
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+input[type=text], select, textarea, input[type=search], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.flex-horizontal {
+    display: flex;
+}
+
+.flex-horizontal > div {
+    background-color: #f1f1f1;
+    margin: 1.5em;
+    padding: 1em;
+    border-radius: 2em;
+}
+input[type=submit], input[type=reset] {
+    width: 22em;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#berichtplaatsen{
+    width: 20em;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.forum{
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+}
+
+.onderwerp {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.datum{
+    font-weight: bold;
+}
+footer{
+    background-color: lightgrey;
+    border-top-style: solid;
+    text-align: center;
+
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: green;
+    font-family: inherit;
+    margin: 0;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover {
+    background-color: green;
+}
+
+.afbeelding{
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+
+    }
+
+    .dropdown {
+        display:flex;
+        justify-content: center;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    main{
+        max-width: 400px;
+    }
+
+    .index{
+        max-width: 400px;
+    }
+    .flex-horizontal{
+        flex-direction: column;
+    }
+
+}
