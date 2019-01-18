@@ -22,8 +22,17 @@ include("php/header.php");
     <div class="flex-horizontal">
         <?php
         include_once "php/config.php";
-        $sql= 'select * from videos';
+        $titel = $_GET['titel'];
+
+        if($titel==NULL){
+                $sql = "SELECT * FROM videos";
+         }
+        else{
+            $sql = "SELECT * FROM videos WHERE titel = '". $titel  ."'";
+
+        }
         $result = $connectie->query($sql);
+
         while ($row = $result->fetch_assoc()){
         ?>
         <div class="video">
